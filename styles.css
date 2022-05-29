@@ -10,9 +10,9 @@ url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&displ
   }
   /* Dark Mode Theme */
   [data-theme="dark"] {
-    --body-bg-color: #444352;
+    --body-bg-color: #202124;
     --text-color: #efefef;
-    --toggler-color: #444352;
+    --toggler-color: #202124;
     --switch-on-color: #fff;
     --switch-off-color: #ccc;
   }
@@ -23,7 +23,7 @@ url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&displ
     transition: color .45s ease-in;
   }
   .switch {
-    position: left;
+    position: relative;
     display: inline-block;
     width: 48px;
     height: 20px;
@@ -75,4 +75,48 @@ url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&displ
   .slider.round:before {
     border-radius: 50%;
   }
-  
+  body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+  }
+  .container {
+      height: 100vh;
+      width: 100vw;
+      display: inline;
+    background-color: var(--body-bg-color);
+    transition: background-color .45s ease-in;
+  }
+  .navbar {
+      display: inline-block;
+      margin-left: 82%;
+      justify-content: space-around;
+      height: 48px;
+      width: 17%;
+      margin-top: 1%;
+  }
+  .navElemnts {
+      
+      display: inline;
+      font-size: 13px;
+      color: var(--text-color);
+      padding: 0px 4px 0px 0px;
+  }
+  #g-apps {
+      padding: 8px;
+      color: var(--text-color);
+  }
+  #signin {
+      margin: 0px 8px;
+      padding: 9px 23px;
+      background-color: #8ab4f8;
+      color: #202124;
+      border-radius: 4px;
+      font-size: 14px;
+      text-align: centre;
+  }
+  a {
+      text-decoration: none;
+  }
