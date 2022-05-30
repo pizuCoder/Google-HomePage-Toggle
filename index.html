@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet"
@@ -8,90 +9,39 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="container" data-theme="dark">
-        <!--dark theme container begins-->
-        <nav>
-        <div class="navbar">
-            <!--toggle button div-->
-            <div class="controller-row">
-                <label class="switch">
-                  <input id="toggler" type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-            </div><!-- End of controller row -->
-            <div class="navElemnts">
-                <a href="#">Gmail</a>
-                <a href="#">Images</a>
-                <a href="#">
-                    <span id="g-apps" class="material-symbols-outlined">
-                        apps
-                    </span>
-                </a>
-                <button id="signin">Sign In</button>
-            </div>   
-        </div>
-        </nav>
+        <header class="header">
+        <nav>  
+            <ul class="r_nav">  
+             <li><a href="#">Gmail</a></li>  
+             <li><a href="#">Images</a></li>  
+             <li><a href="#"><span class="material-symbols-outlined apps">
+                apps
+                </span></li>  
+             <li class="sign_in"><a href="#">Sign in</a></li>  
+            </ul>  
+           </nav>  
+        </header>
+        <section class="cntr_pg">  
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />  
+            <img class="mic" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" alt="" />  
+            <form action="#" method="#" name="searchquery">  
+             <input type="text" name="searchfield" class="search_bar"></input>  
+             <div class="search_buttons">  
+              <input class="submit_buttons" type="submit" value="Google Search" name="submit">  
+              <input class="submit_buttons" type="submit" value="I'm Feeling Lucky" name="feelinglucky"></input>  
+             </div>  
+            </form>  
+        </section> 
         
-        <main><!--Main content begins-->
-            <centre>
-        <div class="googleLogo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png">
-        </div>
-        <div class="searchArea"><!--search Box and buttons-->
-            <div class="SearchBar">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-                <span id="inputspan">
-                    <input type="text" name="search">
-                </span>
-                <span class="material-symbols-outlined">
-                    mic
-                </span>
-            </div>
-            <section>
-                <div><button type="submit">Google Search</button></div>
-                <div><button type="submit">I'm feeling lucky</button></div>
-            </section>
-        </div><!--search Box and buttons END-->
-        <div id="diffLangs">
-            <span>Google offered in:</span>
-          <ul>
-            <li><a href="">हिन्द</a>ी</li>
-            <li><a href="">বাংলা</a></li>
-            <li><a href="">తెలుగు</a></li>
-            <li><a href="">मराठी</a></li>
-            <li><a href="">தமிழ்</a></li>
-            <li><a href="">ગુજરાતી</a></li>
-            <li><a href="">ಕನ್ನಡ</a></li>
-            <li><a href="">മലയാളം</a></li>
-            <li><a href="">ਪੰਜਾਬੀ</a></li>
-          </ul>
-        </div>
-    </centre>
-    </main><!--Main content ends-->
-    
-    <footer><!--Footer Begins-->
-        <div class="footerar">
-            <div class="leftArea">
-                <a href="#">India</a>
-                <hr>
-                <ul class="bottomArea">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Advertising</a></li>
-                    <li><a href="">Business</a></li>
-                    <li><a href="">How Search Works</a></li>
-                </ul>
-            </div>
-            <div class="RightArea bottomArea">
-                <ul>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Settings</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer><!--Footer ends-->
-</div><!--dark theme container ends-->
-</body>
+        <footer>  
+            <ul class="l_ftr">  
+             <li><a href="#">India</a></li>  
+             <li><a href="#">About</a></li>  
+            </ul>  
+            <ul class="r_ftr">  
+             <li><a href="#">Privacy</a></li>  
+             <li><a href="#">Terms</a></li>  
+             <li><a href="#">Settings</a></li>  
+            </ul>  
+           </footer>  
 </html>

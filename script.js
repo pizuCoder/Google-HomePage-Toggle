@@ -1,5 +1,10 @@
-var container = document.getElementsByClassName('container')[0];
-document.getElementById('toggler').addEventListener('change', (event) => {
-  console.log(toggler)
-  event.target.checked ? container.removeAttribute('data-theme') : container.setAttribute('data-theme', 'dark');
-});
+function toggle_light_mode() {
+  var app = document.getElementsByTagName("BODY")[0];
+  if (localStorage.lightMode == "dark") {
+localStorage.lightMode = "light";
+app.setAttribute("light-mode", "light");
+  } else {
+localStorage.lightMode = "dark";
+app.setAttribute("light-mode", "dark");
+  }		
+}
