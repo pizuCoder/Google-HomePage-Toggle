@@ -20,49 +20,22 @@ html {
   padding: 4px 20px;  
  } 
   /* ---- Switch ----  */
-  .switch {
-    width: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .switch div {
-    position: relative;
-    display: block;
-    background: #eee;
-    width: 30px;
-    border-radius: 50px;
-    padding: 0 5px;
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-  
-  .fa-adjust {
-    transform: rotate(180deg);
-  }
-  
-  .switch input {
-    display: none;
-  }
-  
-  .slider {
-    background-color: #999;
-    transition: 0.4s;
-    border-radius: 34px;
-    height: 12px;
-    width: 12px;
+.switch {
+    /* align-self: inherit; */
+    margin: 0.9375rem;
+}
+.inner-switch {
     display: inline-block;
-    position: relative;
-  }
-  
-  input:checked + .slider {
-    transform: translateX(8px);
-  }
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
  /* ------- Top Nav ------- */  
- nav {
-     position: relative;
- }
  nav span {  
   list-style: none;  
   color: #000;  
