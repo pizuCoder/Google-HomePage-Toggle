@@ -64,6 +64,12 @@ html {
   padding: 0 12px;  
   border-radius: 2px; 
  }
+ #theme-toggle:hover{
+     outline: #666666;
+     border: 1px solid #666666;
+     font-weight: bold;
+     
+ }
  /* ------- Sign In Button ------- */  
  .sign_in {  
   border: 1px solid #4285f4;  
@@ -166,7 +172,7 @@ html {
  }  
  .Bottomdiv{
     display:inherit;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 3%;
   }
   .Bottomdiv span{
@@ -176,7 +182,12 @@ html {
   }
   .Bottomdiv a{
       color:#4285f4;
+      text-decoration: none;
   }
+  .Bottomdiv a:hover {
+      text-decoration: underline;
+  }
+
   .Bottomdiv ul{
       display: inline-flex;
       justify-content: space-around;
