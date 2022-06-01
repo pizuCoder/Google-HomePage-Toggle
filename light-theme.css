@@ -3,7 +3,8 @@ html {
   font-size: 100%  
  }  
  body {  
-  font: 13px arial;   
+  font: 13px arial; 
+  transition: background-color .5s;  
  }  
  /* ------- Nav Items ------- */  
  ul {  
@@ -53,6 +54,16 @@ html {
  .apps:hover {  
   opacity: 1;  
  }  
+ #theme-toggle{ 
+  outline: none;  
+  border: 0.1px solid #666666;
+  background: #121212;
+  color: #f2f2f2;  
+  display: inline-block;  
+  line-height: 28px;  
+  padding: 0 12px;  
+  border-radius: 2px; 
+ }
  /* ------- Sign In Button ------- */  
  .sign_in {  
   border: 1px solid #4285f4;  
@@ -76,6 +87,7 @@ html {
  .sign_in:hover {  
   opacity: 1;  
   box-shadow: 0 1.5px 0 0 #e4e4e4;  
+  border: 0.1px solid rgb(98, 98, 98)
  }  
  /* ------- Center Conte ------- */  
  .cntr_pg {  
@@ -152,6 +164,23 @@ html {
   color: #000;  
   box-shadow:0px 1px 4px #E4E4E4;  
  }  
+ .Bottomdiv{
+    display:inherit;
+    font-size: 12px;
+    margin-top: 3%;
+  }
+  .Bottomdiv span{
+      
+    width:7%;
+    color: rgb(26, 25, 25)
+  }
+  .Bottomdiv a{
+      color:#4285f4;
+  }
+  .Bottomdiv ul{
+      display: inline-flex;
+      justify-content: space-around;
+  }
  /* ------- Footer ------- */  
  .l_ftr {  
   float: left;  
