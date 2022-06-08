@@ -39,6 +39,7 @@ function enableDarkTheme() {
   DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
   THEME_TOGGLER.innerHTML = "Dark";
   document.getElementById('Mainlogo').src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png";
+  document.getElementsByTagName('input').setAttribute("style", "background-color: #33333");
 }
 
 function disableDarkTheme() {

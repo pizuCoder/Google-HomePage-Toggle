@@ -11,10 +11,17 @@
         <link rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link id="dark-theme-style" rel="stylesheet" />
-
+        
         <style>
-            body {
+            body,
+            html {
                 font-size: 13px;
+                height: 100%;
+                transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+            }
+            .mic {
+                height: 16px;
+                width: 16px;
             }
         </style>
         
@@ -27,7 +34,7 @@
                 <li class="nav-item">
                     <a
                     href="javascript:void()"
-                    class="btn btn-outline-dark btn-sm ml-auto nav-link"
+                    class="btn btn-outline-dark btn-sm ml-auto nav-link rounded-lg mx-2"
                     id="theme-toggler"
                     onclick="toggleTheme()">
                 </a></li>
@@ -45,19 +52,21 @@
         <main>
             <div class="container align-content-center">
                 <div class="d-flex justify-content-center"><!-- Main Google Logo -->
-                    <img class="pb-3" id="Mainlogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+                    <img class="pb-5 pt-5" id="Mainlogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
                 </div>
-                <div class="searchbar"><!-- Search bar -->
-                    <form class="form-inine" role="form">
-                        <div class="row">
-                            <div class="col-md-6 d-flex align-content-center">
-                                <!-- <img class="mic" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" alt="" /> -->
-                                <span class="material-symbols-outlined">search</span>
-                                <input type="text" name="searchfield" class="input-group"></input>
-                                   
-                            </div>
+                <!-- Search bar -->
+                <div class="form-group">
+                    <div class="border rounded-pill d-flex justify-content-between p-1 w-50 mx-auto mb-4">
+                        <div class="searchIcon m-2">
+                            <span class="material-symbols-outlined">search</span>
                         </div>
-                    </form>
+                        <div class="txtbx rounded-lg">
+                            <input type="text" class="form-control form-control-lg" id="inputsm" placeholder="Search" /> 
+                        </div>
+                        <div class="mic mx-4">
+                           <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" style="width: 36px; height: 36px; ">
+                        </div>        
+                    </div>            
                 </div>
                 <div class="container d-flex justify-content-center "><!-- search buttons -->
                     <button class="button text-center searchbtn m-3 ">Google Search</button>
